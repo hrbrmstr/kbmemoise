@@ -35,6 +35,8 @@ The following functions are implemented:
 ## Installation
 
 ``` r
+install.packages("kbmemoise", repos = c("https://cinc.rud.is", "https://cloud.r-project.org/"))
+# or
 remotes::install_git("https://git.rud.is/hrbrmstr/kbmemoise.git")
 # or
 remotes::install_git("https://git.sr.ht/~hrbrmstr/kbmemoise")

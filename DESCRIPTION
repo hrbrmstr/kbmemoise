@@ -16,11 +16,12 @@ BugReports: https://git.rud.is/hrbrmstr/kbmemoise/issues
 Encoding: UTF-8
 License: MIT + file LICENSE
 Suggests: 
-    covr, tinytest
+    covr
 Depends: 
     R (>= 3.5.0)
 Imports: 
-    httr,
-    jsonlite
+    memoise,
+    digest,
+    tinytest
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0

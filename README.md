@@ -42,6 +42,8 @@ remotes::install_git("https://git.sr.ht/~hrbrmstr/kbmemoise")
 remotes::install_gitlab("hrbrmstr/kbmemoise")
 # or
 remotes::install_bitbucket("hrbrmstr/kbmemoise")
+# or
+remotes::install_github("hrbrmstr/kbmemoise")
 ```
 
 NOTE: To use the ‘remotes’ install options you will need to have the
@@ -67,6 +69,7 @@ mrunif <- memoise::memoise(runif, cache = kbc)
 
 mrunif(10) # First run, saves cache
 ##  [1] 0.5687944 0.5739892 0.4309080 0.1959454 0.7240059 0.4751237 0.4049415 0.6617540 0.7025730 0.9428181
+
 mrunif(10) # Loads cache, results should be identical
 ##  [1] 0.5687944 0.5739892 0.4309080 0.1959454 0.7240059 0.4751237 0.4049415 0.6617540 0.7025730 0.9428181
 
@@ -86,8 +89,8 @@ kbc$size()
 
 | Lang | \# Files |  (%) | LoC |  (%) | Blank lines |  (%) | \# Lines |  (%) |
 | :--- | -------: | ---: | --: | ---: | ----------: | ---: | -------: | ---: |
-| R    |        5 | 0.83 |  97 | 0.85 |          33 | 0.59 |       89 | 0.75 |
-| Rmd  |        1 | 0.17 |  17 | 0.15 |          23 | 0.41 |       30 | 0.25 |
+| R    |        5 | 0.83 |  97 | 0.85 |          33 | 0.58 |       91 | 0.72 |
+| Rmd  |        1 | 0.17 |  17 | 0.15 |          24 | 0.42 |       36 | 0.28 |
 
 ## Code of Conduct
 

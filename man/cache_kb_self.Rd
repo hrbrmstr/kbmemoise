@@ -26,6 +26,7 @@ provided in slots in the returned list:
 }
 }
 \examples{
+if (tinytest::at_home()) {
 kbc <- cache_kb_self(".cache")
 
 kbc$location()
@@ -42,4 +43,5 @@ kbc$size()
 kbc$reset()
 
 kbc$size()
+}
 }

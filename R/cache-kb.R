@@ -68,6 +68,7 @@ cache_kb <- function(cache_path, algo = "sha512") {
 #'        for available algorithms.
 #' @export
 #' @examples
+#' if (tinytest::at_home()) {
 #' kbc <- cache_kb_self(".cache")
 #'
 #' kbc$location()
@@ -84,6 +85,7 @@ cache_kb <- function(cache_path, algo = "sha512") {
 #' kbc$reset()
 #'
 #' kbc$size()
+#' }
 cache_kb_self <- function(cache_subdir, private = TRUE,  algo = "sha512") {
 
    me <- system2(kbexec(), "whoami", stdout = TRUE)

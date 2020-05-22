@@ -39,23 +39,30 @@ packageVersion("kbmemoise")
 
 ```
 
-```{r ex-01}
+```{r ex-01, eval=FALSE}
 kbc <- cache_kb_self(".cache")
 
 kbc$location()
+## [1] "/Volumes/Keybase/private/hrbrmstr/.cache"
 
 mrunif <- memoise::memoise(runif, cache = kbc)
 
 mrunif(10) # First run, saves cache
+##  [1] 0.5687944 0.5739892 0.4309080 0.1959454 0.7240059 0.4751237 0.4049415 0.6617540 0.7025730 0.9428181
+
 mrunif(10) # Loads cache, results should be identical
+##  [1] 0.5687944 0.5739892 0.4309080 0.1959454 0.7240059 0.4751237 0.4049415 0.6617540 0.7025730 0.9428181
 
 kbc$keys()
+## [1] "abb4b2ca91214fd892622aa50f4f5dc98d1453ae577cd916e60e02ebda8bbe7d75ff93d1fdd81967edced64de89833361e7f150cfae4898acb70b1aac932e791"
 
 kbc$size()
+## [1] 0
 
 kbc$reset()
 
 kbc$size()
+## [1] 0
 ```
 
 ## kbmemoise Metrics

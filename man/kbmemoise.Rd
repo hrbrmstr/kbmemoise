@@ -4,9 +4,11 @@
 \name{kbmemoise}
 \alias{kbmemoise}
 \alias{kbmemoise-package}
-\title{...}
+\title{Keybase Filesystem Backing Store for 'memoise' Caching}
 \description{
-A good description goes here otherwise CRAN checks fail.
+Keybase \url{https://keybase.io} provides 250GB free, encrypted
+storage making it suitable for creating a cross-system backing store
+for 'memoise' caches. Tools are provided to use Keybase with 'memoise'.
 }
 \seealso{
 Useful links:

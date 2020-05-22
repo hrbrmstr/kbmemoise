@@ -39,6 +39,25 @@ packageVersion("kbmemoise")
 
 ```
 
+```{r ex-01}
+kbc <- cache_kb_self(".cache")
+
+kbc$location()
+
+mrunif <- memoise::memoise(runif, cache = kbc)
+
+mrunif(10) # First run, saves cache
+mrunif(10) # Loads cache, results should be identical
+
+kbc$keys()
+
+kbc$size()
+
+kbc$reset()
+
+kbc$size()
+```
+
 ## kbmemoise Metrics
 
 ```{r cloc, echo=FALSE}

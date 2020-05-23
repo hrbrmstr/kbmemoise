@@ -79,7 +79,7 @@ kbc$keys()
 ## [1] "abb4b2ca91214fd892622aa50f4f5dc98d1453ae577cd916e60e02ebda8bbe7d75ff93d1fdd81967edced64de89833361e7f150cfae4898acb70b1aac932e791"
 
 kbc$size()
-## [1] 0
+## [1] 291
 
 kbc$reset()
 
